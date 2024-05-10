@@ -44,21 +44,11 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`category_id`, `category_name`, `category_icon`, `category_sub`, `category_slug`, `category_sorting`, `category_status`, `created_at`, `updated_at`) VALUES
-(1, 'ViVo', 'fa fa-gift', NULL, 'vivo', 2, 1, '2021-11-04 04:28:06', '2023-06-03 06:05:38'),
-(2, 'shoes', 'fa fa-gift', 12, 'shoes', 3, 1, '2021-11-04 04:28:06', '2023-06-03 06:05:40'),
-(3, 'Iphone', 'fa fa-suitcase', NULL, 'iphone', 1, 1, '2021-11-04 06:08:12', '2023-06-02 15:17:40'),
-(5, 'Oppo', 'fa fa-bed', NULL, 'oppo', 3, 1, '2021-11-04 07:13:45', '2023-06-03 06:05:38'),
-(6, 'Xiaomi', 'fa fa-child', NULL, 'xiaomi', 4, 1, '2021-11-04 07:14:15', '2023-06-03 06:05:38'),
-(10, 'CLOTHING', 'fa fa-gift', 1, 'clothing', 1, 1, '2021-11-05 10:54:32', '2021-11-08 07:25:26'),
-(11, 'JWELLERY', 'fa fa-gift', 1, 'jwellery', 4, 2, '2021-11-05 11:08:16', '2023-06-03 06:05:51'),
-(12, 'SWIMWEAR', 'fa fa-gift', 1, 'swimwear', 2, 1, '2021-11-05 11:08:44', '2021-11-08 07:25:26'),
-(13, 'WATCHES', 'fa fa-suitcase', 3, 'watches', 1, 1, '2021-11-05 11:09:11', '2021-11-17 04:12:13'),
-(14, 'SUNGLASSES', 'fa fa-suitcase', 3, 'sunglasses', 2, 1, '2021-11-05 11:13:27', '2021-11-08 07:27:22'),
-(15, 'SHOES MEN', 'fa fa-suitcase', 3, 'shoes-men', 2, 1, '2021-11-05 11:14:16', '2021-11-08 07:27:26'),
-(16, 'Western Wear', 'fa fa-gift', 12, 'western-wear', 16, 2, '2021-11-08 04:10:15', '2023-06-03 06:05:48'),
-(17, 'Night Wear', 'fa fa-gift', 2, 'night-wear', 17, 1, '2021-11-08 04:18:44', '2021-11-08 07:28:29'),
-(18, 'Ethnic Wear', 'fa fa-gift', 1, 'ethnic-wear', 18, 1, '2021-11-08 04:19:29', '2023-06-03 06:05:38'),
-(19, 'Designer Wear', 'fa fa-gift', 10, 'designer-wear', 2, 1, '2021-11-08 04:19:54', '2021-11-08 07:28:19');
+(1, 'ViVo', 'fa fa-gift', NULL, 'vivo', 2, 1, '2021-11-04 04:28:06', '2024-5-10 06:05:38'),
+(3, 'Iphone', 'fa fa-suitcase', NULL, 'iphone', 1, 1, '2021-11-04 06:08:12', '2024-5-10 15:17:40'),
+(5, 'Oppo', 'fa fa-bed', NULL, 'oppo', 3, 1, '2021-11-04 07:13:45', '2024-5-10 06:05:38'),
+(6, 'Xiaomi', 'fa fa-child', NULL, 'xiaomi', 4, 1, '2021-11-04 07:14:15', '2024-5-10 06:05:38'),
+
 
 -- --------------------------------------------------------
 
@@ -168,7 +158,7 @@ CREATE TABLE `coupon` (
 --
 
 INSERT INTO `coupon` (`coupon_id`, `coupon_code`, `coupon_qty`, `coupon_date_start`, `coupon_date_end`, `coupon_used`, `coupon_condition`, `coupon_sale_number`, `coupon_status`, `created_at`, `updated_at`) VALUES
-(2, 'CODEDOAN', 55, '2023/06/03', '2023/06/09', NULL, 1, 300000, 1, '2023-06-02 17:25:04', '2023-06-02 17:25:04');
+(2, 'CODEDOAN', 55, '2023/06/03', '2023/06/09', NULL, 1, 300000, 1, '2024-5-10 17:25:04', '2024-5-10 17:25:04');
 
 -- --------------------------------------------------------
 
@@ -193,21 +183,19 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`customer_id`, `customer_name`, `customer_address`, `customer_phone`, `customer_pay`, `customer_code`, `customer_note`, `created_at`, `updated_at`) VALUES
-(1, 'test', 'dsds,Xã Kim Sơn,Huyện Lục Ngạn,Tỉnh Bắc Giang', '0773654058', 'ATM-VNPAY', 1085497947, NULL, '2021-11-11 05:49:53', '2021-11-11 05:49:53'),
-(2, 'pipj', 'ffefef,Xã Nà Sác,Huyện Hà Quảng,Tỉnh Cao Bằng', '022365012', 'ATM-PAYPAL', 1713437437, NULL, '2021-11-12 04:02:52', '2021-11-12 04:02:52'),
-(3, 'aaaa', 'rrrr,Xã Cán Tỷ,Huyện Quản Bạ,Tỉnh Hà Giang', '0223654897', 'ATM-PAYPAL', 1632122088, NULL, '2021-11-12 04:05:09', '2021-11-12 04:05:09'),
-(5, 'user 3', 'fefe,Xã Tung Chung Phố,Huyện Mường Khương,Tỉnh Lào Cai', '0773654022', 'ATM-PAYPAL', 1520533064, NULL, '2021-11-17 03:57:49', '2021-11-17 03:57:49'),
-(6, 'user 222222222', 'fefe,Xã Bằng Vân,Huyện Ngân Sơn,Tỉnh Bắc Kạn', '0773654899', 'ATM-PAYPAL', 2080243830, NULL, '2021-11-17 04:00:48', '2021-11-17 04:00:48'),
-(7, 'user 3ddd', 'dedede,Xã Phú Bình,Huyện Chiêm Hóa,Tỉnh Tuyên Quang', '0773654033', 'ATM-PAYPAL', 1707224882, NULL, '2021-11-17 04:09:35', '2021-11-17 04:09:35'),
-(9, 'nnnn', 'sfd,Xã Yên Dương,Huyện Tam Đảo,Tỉnh Vĩnh Phúc', '0987654321', 'COD', 1628340126, 'dff', '2023-05-27 07:16:16', '2023-05-27 07:16:16'),
-(10, 'nnnn', 'sfd,Xã Vĩnh Sơn,Huyện Vĩnh Tường,Tỉnh Vĩnh Phúc', '9456564645', 'ATM-PAYPAL', 852782478, 'xxx', '2023-05-27 07:19:08', '2023-05-27 07:19:08'),
-(11, 'admin', 'sfd,Xã Đạo Đức,Huyện Bình Xuyên,Tỉnh Vĩnh Phúc', '9456564645', 'ATM-PAYPAL', 1826005711, 'xxx', '2023-05-27 07:25:08', '2023-05-27 07:25:08'),
-(13, 'demo1', 'sfd,Xã Tiên Lữ,Huyện Lập Thạch,Tỉnh Vĩnh Phúc', '9456564645', 'ATM-PAYPAL', 1207338438, 'xxx', '2023-06-02 17:17:19', '2023-06-02 17:17:19'),
-(14, 'admin', 'sfd,Xã Yên Dương,Huyện Tam Đảo,Tỉnh Vĩnh Phúc', '9456564645', 'ATM-PAYPAL', 1126023702, 'xxx', '2023-06-02 17:32:12', '2023-06-02 17:32:12'),
-(15, 'admin', 'sfd,Xã Quang Hán,Huyện Trà Lĩnh,Tỉnh Cao Bằng', '9456564645', 'COD', 238337867, 'g', '2023-06-03 04:23:14', '2023-06-03 04:23:14'),
-(16, 'codedoan1', 'sfd,Xã Hưng Thịnh,Huyện Bảo Lạc,Tỉnh Cao Bằng', '9456564645', 'COD', 147332760, 'xxxx', '2023-06-03 06:00:54', '2023-06-03 06:00:54'),
-(17, 'codedoan1', 'sfd,Xã Lương Can,Huyện Thông Nông,Tỉnh Cao Bằng', '9456564645', 'ATM-PAYPAL', 1901174948, 'thanh toan onl', '2023-06-03 06:01:46', '2023-06-03 06:01:46'),
-(18, 'admin', 'sfd,Thị trấn Thông Nông,Huyện Thông Nông,Tỉnh Cao Bằng', '9456564645', 'ATM-PAYPAL', 1560278407, 'xx', '2023-06-03 06:24:41', '2023-06-03 06:24:41');
+(1, 'test', 'dsds,Xã Kim Sơn,Huyện Lục Ngạn,Tỉnh Bắc Giang', '0773654058', 'ATM-VNPAY', 1085497947, NULL, '2024-5-10 05:49:53', '2024-5-10 05:49:53'),
+(2, 'pipj', 'ffefef,Xã Nà Sác,Huyện Hà Quảng,Tỉnh Cao Bằng', '022365012', 'ATM-PAYPAL', 1713437437, NULL, '2024-5-10 04:02:52', '2024-5-10 04:02:52'),
+(3, 'aaaa', 'rrrr,Xã Cán Tỷ,Huyện Quản Bạ,Tỉnh Hà Giang', '0223654897', 'ATM-PAYPAL', 1632122088, NULL, '2024-5-10 04:05:09', '2024-5-10 04:05:09'),
+(5, 'user 3', 'fefe,Xã Tung Chung Phố,Huyện Mường Khương,Tỉnh Lào Cai', '0773654022', 'ATM-PAYPAL', 1520533064, NULL, '2024-5-10 03:57:49', '2024-5-10 03:57:49'),
+(6, 'user 222222222', 'fefe,Xã Bằng Vân,Huyện Ngân Sơn,Tỉnh Bắc Kạn', '0773654899', 'ATM-PAYPAL', 2080243830, NULL, '2024-5-10 04:00:48', '2024-5-10 04:00:48'),
+(7, 'user 3ddd', 'dedede,Xã Phú Bình,Huyện Chiêm Hóa,Tỉnh Tuyên Quang', '0773654033', 'ATM-PAYPAL', 1707224882, NULL, '2024-5-10 04:09:35', '2024-5-10 04:09:35'),
+(9, 'nnnn', 'sfd,Xã Yên Dương,Huyện Tam Đảo,Tỉnh Vĩnh Phúc', '0987654321', 'COD', 1628340126, 'dff', '2024-5-10 07:16:16', '2024-5-10 07:16:16'),
+(10, 'nnnn', 'sfd,Xã Vĩnh Sơn,Huyện Vĩnh Tường,Tỉnh Vĩnh Phúc', '9456564645', 'ATM-PAYPAL', 852782478, 'xxx', '2024-5-10 07:19:08', '2024-5-10 07:19:08'),
+(11, 'admin', 'sfd,Xã Đạo Đức,Huyện Bình Xuyên,Tỉnh Vĩnh Phúc', '9456564645', 'ATM-PAYPAL', 1826005711, 'xxx', '2024-5-10 07:25:08', '2024-5-10 07:25:08'),
+(13, 'demo1', 'sfd,Xã Tiên Lữ,Huyện Lập Thạch,Tỉnh Vĩnh Phúc', '9456564645', 'ATM-PAYPAL', 1207338438, 'xxx', '2024-5-10 17:17:19', '2024-5-10 17:17:19'),
+(14, 'admin', 'sfd,Xã Yên Dương,Huyện Tam Đảo,Tỉnh Vĩnh Phúc', '9456564645', 'ATM-PAYPAL', 1126023702, 'xxx', '2024-5-10 17:32:12', '2024-5-10 17:32:12'),
+(15, 'admin', 'sfd,Xã Quang Hán,Huyện Trà Lĩnh,Tỉnh Cao Bằng', '9456564645', 'COD', 238337867, 'g', '2024-5-10 04:23:14', '2024-5-10 04:23:14'),
+(16, 'admin', 'sfd,Thị trấn Thông Nông,Huyện Thông Nông,Tỉnh Cao Bằng', '9456564645', 'ATM-PAYPAL', 1560278407, 'xx', '2024-5-10 06:24:41', '2024-5-10 06:24:41');
 
 -- --------------------------------------------------------
 
@@ -983,24 +971,24 @@ INSERT INTO `gallery` (`gallery_id`, `pro_id`, `gallery_image`, `created_at`, `u
 (4, 2, '19_1636428068_d1641e5f93723973affeec6217b19d45.jpg', '2021-11-06 09:36:24', '2021-11-09 03:21:08'),
 (5, 2, '92_1636428072_358c1db4e2809eaf7ca241929b948dc1.jpg', '2021-11-06 09:36:24', '2021-11-09 03:21:12'),
 (6, 2, '14_1636428075_c695f4e7808eb08340c3cc59dca75179.jpg', '2021-11-06 09:36:26', '2021-11-09 03:21:15'),
-(7, 4, '1636360718_product6.jpg', '2021-11-08 08:38:38', '2021-11-08 08:38:38'),
-(8, 5, '1636361947_product9.jpg', '2021-11-08 08:59:07', '2021-11-08 08:59:07'),
+(7, 4, '1636360718_product6.jpg', '2024-5-10 08:38:38', '2024-5-10 08:38:38'),
+(8, 5, '1636361947_product9.jpg', '2024-5-10 08:59:07', '2024-5-10 08:59:07'),
 (9, 2, '6189eb417a684_1636428609_64b243a20f5c5e086e72117b0bd4cf45.jpg', '2021-11-09 03:30:09', '2021-11-09 03:30:09'),
-(10, 6, '1685726440_(600x600)_14pro_max_trang_600x600_didongmy.png', '2023-06-02 17:20:40', '2023-06-02 17:20:40'),
-(11, 6, '647a250c2bf7d_1685726476_xiaomi-redmi-12c-grey-thumb-600x600.jpg', '2023-06-02 17:21:16', '2023-06-02 17:21:16'),
-(13, 6, '647a251f6f5d7_1685726495_vivo-v25-5g-vang-thumb-1-1-600x600.jpg', '2023-06-02 17:21:35', '2023-06-02 17:21:35'),
-(14, 7, '28_1685765920_samsung-galaxy-a23-cam-thumb-600x600.jpg', '2023-06-03 04:17:02', '2023-06-03 04:18:40'),
-(15, 7, '647abf1bee786_1685765915_637825310288115049_samsung-galaxy-a53-den-4.jpg', '2023-06-03 04:18:35', '2023-06-03 04:18:35'),
-(16, 7, '647abf2b33428_1685765931_vivo-v25-5g-vang-thumb-1-1-600x600.jpg', '2023-06-03 04:18:51', '2023-06-03 04:18:51'),
-(17, 7, '647abf3347cf9_1685765939_xiaomi-redmi-12c-grey-thumb-600x600.jpg', '2023-06-03 04:18:59', '2023-06-03 04:18:59'),
-(18, 8, '1685766119_10053969-dien-thoai-xiaomi-redmi-a1-2gb-32gb-xanh-duong-1.jpg', '2023-06-03 04:21:59', '2023-06-03 04:21:59'),
-(19, 8, '647abff56a0ad_1685766133_10053969-dien-thoai-xiaomi-redmi-a1-2gb-32gb-xanh-duong-1.jpg', '2023-06-03 04:22:13', '2023-06-03 04:22:13'),
-(20, 8, '647abff905733_1685766137_80b1056794c6b1ccfe44653589bc53a0.jpg_720x720q80.jpg', '2023-06-03 04:22:17', '2023-06-03 04:22:17'),
-(21, 8, '647abffcd64d8_1685766140_600_Mi9T_xanh_800x800-min.jpg', '2023-06-03 04:22:20', '2023-06-03 04:22:20'),
-(22, 8, '647ac000a92ff_1685766144_xiaomi-9a.jpg', '2023-06-03 04:22:24', '2023-06-03 04:22:24'),
-(23, 9, '1685772268_80b1056794c6b1ccfe44653589bc53a0.jpg_720x720q80.jpg', '2023-06-03 06:04:29', '2023-06-03 06:04:29'),
-(25, 9, '647ad803c130e_1685772291_600_Mi9T_xanh_800x800-min.jpg', '2023-06-03 06:04:51', '2023-06-03 06:04:51'),
-(26, 9, '647ad808de0db_1685772296_xiaomi-9a.jpg', '2023-06-03 06:04:56', '2023-06-03 06:04:56');
+(10, 6, '1685726440_(600x600)_14pro_max_trang_600x600_didongmy.png', '2024-5-10 17:20:40', '2024-5-10 17:20:40'),
+(11, 6, '647a250c2bf7d_1685726476_xiaomi-redmi-12c-grey-thumb-600x600.jpg', '2024-5-10 17:21:16', '2024-5-10 17:21:16'),
+(13, 6, '647a251f6f5d7_1685726495_vivo-v25-5g-vang-thumb-1-1-600x600.jpg', '2024-5-10 17:21:35', '2024-5-10 17:21:35'),
+(14, 7, '28_1685765920_samsung-galaxy-a23-cam-thumb-600x600.jpg', '2024-5-10 04:17:02', '2024-5-10 04:18:40'),
+(15, 7, '647abf1bee786_1685765915_637825310288115049_samsung-galaxy-a53-den-4.jpg', '2024-5-10 04:18:35', '2024-5-10 04:18:35'),
+(16, 7, '647abf2b33428_1685765931_vivo-v25-5g-vang-thumb-1-1-600x600.jpg', '2024-5-10 04:18:51', '2024-5-10 04:18:51'),
+(17, 7, '647abf3347cf9_1685765939_xiaomi-redmi-12c-grey-thumb-600x600.jpg', '2024-5-10 04:18:59', '2024-5-10 04:18:59'),
+(18, 8, '1685766119_10053969-dien-thoai-xiaomi-redmi-a1-2gb-32gb-xanh-duong-1.jpg', '2024-5-10 04:21:59', '2024-5-10 04:21:59'),
+(19, 8, '647abff56a0ad_1685766133_10053969-dien-thoai-xiaomi-redmi-a1-2gb-32gb-xanh-duong-1.jpg', '2024-5-10 04:22:13', '2024-5-10 04:22:13'),
+(20, 8, '647abff905733_1685766137_80b1056794c6b1ccfe44653589bc53a0.jpg_720x720q80.jpg', '2024-5-10 04:22:17', '2024-5-10 04:22:17'),
+(21, 8, '647abffcd64d8_1685766140_600_Mi9T_xanh_800x800-min.jpg', '2024-5-10 04:22:20', '2024-5-10 04:22:20'),
+(22, 8, '647ac000a92ff_1685766144_xiaomi-9a.jpg', '2024-5-10 04:22:24', '2024-5-10 04:22:24'),
+(23, 9, '1685772268_80b1056794c6b1ccfe44653589bc53a0.jpg_720x720q80.jpg', '2024-5-10 06:04:29', '2024-5-10 06:04:29'),
+(25, 9, '647ad803c130e_1685772291_600_Mi9T_xanh_800x800-min.jpg', '2024-5-10 06:04:51', '2024-5-10 06:04:51'),
+(26, 9, '647ad808de0db_1685772296_xiaomi-9a.jpg', '2024-5-10 06:04:56', '2024-5-10 06:04:56');
 
 -- --------------------------------------------------------
 
@@ -1055,21 +1043,21 @@ CREATE TABLE `order` (
 --
 
 INSERT INTO `order` (`order_id`, `user_id`, `order_code`, `order_status`, `order_review`, `created_at`, `updated_at`) VALUES
-(1, 2, 1085497947, 2, 0, '2021-11-11 05:49:53', '2021-11-17 03:38:14'),
-(2, 2, 1713437437, 1, 0, '2021-11-12 04:02:52', '2021-11-12 04:02:52'),
-(3, 2, 1632122088, 3, 1, '2021-11-12 04:05:09', '2021-11-16 06:48:44'),
-(4, 3, 1520533064, 1, 0, '2021-11-17 03:57:49', '2021-11-17 03:57:49'),
-(5, 3, 2080243830, 1, 0, '2021-11-17 04:00:48', '2021-11-17 04:00:48'),
-(6, 3, 1707224882, 3, 1, '2021-11-17 04:09:35', '2021-11-17 04:14:26'),
-(8, 4, 1628340126, 3, 0, '2023-05-27 07:16:16', '2023-06-02 17:52:44'),
-(9, 4, 852782478, 3, 0, '2023-05-27 07:19:08', '2023-06-02 17:34:43'),
-(10, 1, 1826005711, 3, 0, '2023-05-27 07:25:08', '2023-06-02 17:34:25'),
-(12, 7, 1207338438, 3, 0, '2023-06-02 17:17:19', '2023-06-02 17:34:35'),
-(13, 1, 1126023702, 3, 0, '2023-06-02 17:32:12', '2023-06-02 17:52:34'),
-(14, 1, 238337867, 3, 0, '2023-06-03 04:23:14', '2023-06-03 04:23:47'),
-(15, 10, 147332760, 2, 0, '2023-06-03 06:00:54', '2023-06-03 06:09:28'),
-(16, 10, 1901174948, 3, 0, '2023-06-03 06:01:46', '2023-06-03 06:09:19'),
-(17, 1, 1560278407, 1, 0, '2023-06-03 06:24:41', '2023-06-03 06:24:41');
+(1, 2, 1085497947, 2, 0, '2024-5-10 05:49:53', '2024-5-10 03:38:14'),
+(2, 2, 1713437437, 1, 0, '2024-5-10 04:02:52', '2024-5-10 04:02:52'),
+(3, 2, 1632122088, 3, 1, '2024-5-10 04:05:09', '2021-11-16 06:48:44'),
+(4, 3, 1520533064, 1, 0, '2024-5-10 03:57:49', '2024-5-10 03:57:49'),
+(5, 3, 2080243830, 1, 0, '2024-5-10 04:00:48', '2024-5-10 04:00:48'),
+(6, 3, 1707224882, 3, 1, '2024-5-10 04:09:35', '2024-5-10 04:14:26'),
+(8, 4, 1628340126, 3, 0, '2024-5-10 07:16:16', '2024-5-10 17:52:44'),
+(9, 4, 852782478, 3, 0, '2024-5-10 07:19:08', '2024-5-10 17:34:43'),
+(10, 1, 1826005711, 3, 0, '2024-5-10 07:25:08', '2024-5-10 17:34:25'),
+(12, 7, 1207338438, 3, 0, '2024-5-10 17:17:19', '2024-5-10 17:34:35'),
+(13, 1, 1126023702, 3, 0, '2024-5-10 17:32:12', '2024-5-10 17:52:34'),
+(14, 1, 238337867, 3, 0, '2024-5-10 04:23:14', '2024-5-10 04:23:47'),
+(15, 10, 147332760, 2, 0, '2024-5-10 06:00:54', '2024-5-10 06:09:28'),
+(16, 10, 1901174948, 3, 0, '2024-5-10 06:01:46', '2024-5-10 06:09:19'),
+(17, 1, 1560278407, 1, 0, '2024-5-10 06:24:41', '2024-5-10 06:24:41');
 
 -- --------------------------------------------------------
 
@@ -1094,28 +1082,28 @@ CREATE TABLE `orderdetail` (
 --
 
 INSERT INTO `orderdetail` (`orderdetail_id`, `order_code`, `pro_id`, `order_de_price`, `order_de_qty`, `order_de_coupon`, `order_review`, `created_at`, `updated_at`) VALUES
-(1, 1085497947, 5, 500000, 2, 'no', 0, '2021-11-11 05:49:53', '2021-11-11 05:49:53'),
-(2, 1713437437, 5, 500000, 5, 'no', 0, '2021-11-12 04:02:52', '2021-11-12 06:29:45'),
-(3, 1632122088, 2, 250000, 1, 'no', 1, '2021-11-12 04:05:09', '2021-11-12 04:05:09'),
-(4, 1520533064, 5, 500000, 2, 'no', 0, '2021-11-17 03:57:49', '2021-11-17 03:57:49'),
-(5, 1520533064, 2, 250000, 2, 'no', 0, '2021-11-17 03:57:49', '2021-11-17 03:57:49'),
-(6, 2080243830, 3, 350000, 1, 'no', 0, '2021-11-17 04:00:48', '2021-11-17 04:00:48'),
-(7, 1707224882, 2, 250000, 2, 'no', 1, '2021-11-17 04:09:35', '2021-11-17 04:09:35'),
-(8, 1707224882, 5, 500000, 12, 'no', 1, '2021-11-17 04:09:35', '2021-11-17 04:28:23'),
-(10, 1628340126, 2, 250000, 1, 'no', 0, '2023-05-27 07:16:16', '2023-05-27 07:16:16'),
-(11, 852782478, 2, 250000, 1, 'no', 0, '2023-05-27 07:19:08', '2023-05-27 07:19:08'),
-(12, 1826005711, 2, 250000, 1, 'no', 1, '2023-05-27 07:25:08', '2023-06-03 04:25:19'),
-(16, 1207338438, 5, 3, 1, 'no', 0, '2023-06-02 17:17:19', '2023-06-02 17:17:19'),
-(17, 1207338438, 1, 2100000, 1, 'no', 0, '2023-06-02 17:17:19', '2023-06-02 17:17:19'),
-(18, 1126023702, 6, 34000000, 1, 'no', 0, '2023-06-02 17:32:12', '2023-06-02 17:32:12'),
-(19, 238337867, 8, 11000000, 1, 'no', 1, '2023-06-03 04:23:14', '2023-06-03 04:25:39'),
-(20, 147332760, 6, 34000000, 2, 'no', 0, '2023-06-03 06:00:54', '2023-06-03 06:00:54'),
-(21, 147332760, 8, 11000000, 2, 'no', 0, '2023-06-03 06:00:54', '2023-06-03 06:00:54'),
-(22, 1901174948, 7, 6000000, 1, 'no', 0, '2023-06-03 06:01:46', '2023-06-03 06:01:46'),
-(23, 1560278407, 6, 34000000, 1, 'no', 0, '2023-06-03 06:24:41', '2023-06-03 06:24:41'),
-(24, 1560278407, 9, 8000000, 1, 'no', 0, '2023-06-03 06:24:41', '2023-06-03 06:24:41'),
-(25, 1560278407, 7, 6000000, 2, 'no', 0, '2023-06-03 06:24:41', '2023-06-03 06:24:41'),
-(26, 1560278407, 5, 3, 1, 'no', 0, '2023-06-03 06:24:41', '2023-06-03 06:24:41');
+(1, 1085497947, 5, 500000, 2, 'no', 0, '2024-5-10 05:49:53', '2024-5-10 05:49:53'),
+(2, 1713437437, 5, 500000, 5, 'no', 0, '2024-5-10 04:02:52', '2024-5-10 06:29:45'),
+(3, 1632122088, 2, 250000, 1, 'no', 1, '2024-5-10 04:05:09', '2024-5-10 04:05:09'),
+(4, 1520533064, 5, 500000, 2, 'no', 0, '2024-5-10 03:57:49', '2024-5-10 03:57:49'),
+(5, 1520533064, 2, 250000, 2, 'no', 0, '2024-5-10 03:57:49', '2024-5-10 03:57:49'),
+(6, 2080243830, 3, 350000, 1, 'no', 0, '2024-5-10 04:00:48', '2024-5-10 04:00:48'),
+(7, 1707224882, 2, 250000, 2, 'no', 1, '2024-5-10 04:09:35', '2024-5-10 04:09:35'),
+(8, 1707224882, 5, 500000, 12, 'no', 1, '2024-5-10 04:09:35', '2024-5-10 04:28:23'),
+(10, 1628340126, 2, 250000, 1, 'no', 0, '2024-5-10 07:16:16', '2024-5-10 07:16:16'),
+(11, 852782478, 2, 250000, 1, 'no', 0, '2024-5-10 07:19:08', '2024-5-10 07:19:08'),
+(12, 1826005711, 2, 250000, 1, 'no', 1, '2024-5-10 07:25:08', '2024-5-10 04:25:19'),
+(16, 1207338438, 5, 3, 1, 'no', 0, '2024-5-10 17:17:19', '2024-5-10 17:17:19'),
+(17, 1207338438, 1, 2100000, 1, 'no', 0, '2024-5-10 17:17:19', '2024-5-10 17:17:19'),
+(18, 1126023702, 6, 34000000, 1, 'no', 0, '2024-5-10 17:32:12', '2024-5-10 17:32:12'),
+(19, 238337867, 8, 11000000, 1, 'no', 1, '2024-5-10 04:23:14', '2024-5-10 04:25:39'),
+(20, 147332760, 6, 34000000, 2, 'no', 0, '2024-5-10 06:00:54', '2024-5-10 06:00:54'),
+(21, 147332760, 8, 11000000, 2, 'no', 0, '2024-5-10 06:00:54', '2024-5-10 06:00:54'),
+(22, 1901174948, 7, 6000000, 1, 'no', 0, '2024-5-10 06:01:46', '2024-5-10 06:01:46'),
+(23, 1560278407, 6, 34000000, 1, 'no', 0, '2024-5-10 06:24:41', '2024-5-10 06:24:41'),
+(24, 1560278407, 9, 8000000, 1, 'no', 0, '2024-5-10 06:24:41', '2024-5-10 06:24:41'),
+(25, 1560278407, 7, 6000000, 2, 'no', 0, '2024-5-10 06:24:41', '2024-5-10 06:24:41'),
+(26, 1560278407, 5, 3, 1, 'no', 0, '2024-5-10 06:24:41', '2024-5-10 06:24:41');
 
 -- --------------------------------------------------------
 
@@ -1157,15 +1145,15 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`product_id`, `product_name`, `product_slug`, `category_id`, `product_desc`, `product_price`, `product_price_sale`, `product_quantity`, `product_view`, `product_image`, `product_sold`, `product_status`, `created_at`, `updated_at`) VALUES
-(1, 'Vivo y15', 'vivo-y15', 1, 'product 1', 2100000, 0, 123, 129, '1685719614_d0ee12653b2965f03ea8db99444f73f2.jpg_720x720q80.jpg', 2, 1, '2021-11-06 06:49:33', '2023-06-03 04:47:27'),
-(2, 'Vivo v25', 'vivo-v25', 1, '<ul>\r\n	<li>xxx</li>\r\n</ul>', 9000000, 250000, 119, 113, '1685719574_vivo-v25-5g-vang-thumb-1-1-600x600.jpg', 4, 1, '2021-11-15 05:24:28', '2023-06-03 05:58:33'),
-(3, 'Xiaomi', 'xiaomi', 6, 'product 3', 3500000, 0, 124, 20, '1685719523_xiaomi-redmi-12c-grey-thumb-600x600.jpg', 0, 1, '2021-11-08 08:29:42', '2023-06-03 06:03:52'),
-(4, 'Iphone 13 pro', 'iphone-13-pro', 3, '<p><strong>Tặng full combo phụ kiện:</strong></p>\r\n\r\n<ul>\r\n	<li>D&aacute;n cường lực full ch&iacute;nh h&atilde;ng</li>\r\n	<li>Ốp lưng chống sốc silicon ch&iacute;nh h&atilde;ng</li>\r\n	<li>Bộ c&aacute;p sạc 20W ch&iacute;nh h&atilde;ng (<a href=\"https://www.xtmobile.vn/bao-hanh-mo-rong\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n</ul>\r\n\r\n<p><strong>Ưu đ&atilde;i độc quyền:</strong></p>\r\n\r\n<ul>\r\n	<li>Thu cũ l&ecirc;n đời máy mới,<strong>&nbsp;giá thu cao nh&acirc;́t&nbsp;</strong>thị trường&nbsp;(<a href=\"https://www.xtmobile.vn/thu-doi-may-cu\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n	<li>Tặng g&oacute;i bảo h&agrave;nh to&agrave;n diện (cả nguồn, m&agrave;n h&igrave;nh) trong&nbsp;<strong>6 th&aacute;ng</strong></li>\r\n	<li><strong>Giảm 30%</strong>&nbsp;khi n&acirc;ng cấp bảo h&agrave;nh mở rộng 1 đổi 1, rơi vỡ thấm nước (<strong>bảo h&agrave;nh pin 5 năm</strong>) (<a href=\"https://www.xtmobile.vn/bao-hanh-mo-rong\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n</ul>', 32000000, 0, 125, 5, '1685719441_(600x600)_14pro_max_trang_600x600_didongmy.png', 0, 2, '2021-11-08 08:38:38', '2023-06-03 06:05:18'),
-(5, 'Iphone 14 pro', 'iphone-14-pro', 3, '<ul>\r\n	<li>\r\n	<p><strong>Tặng full combo phụ kiện:</strong></p>\r\n	</li>\r\n	<li>D&aacute;n cường lực full ch&iacute;nh h&atilde;ng</li>\r\n	<li>Ốp lưng chống sốc silicon ch&iacute;nh h&atilde;ng</li>\r\n	<li>Bộ c&aacute;p sạc 20W ch&iacute;nh h&atilde;ng (<a href=\"https://www.xtmobile.vn/bao-hanh-mo-rong\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n	<li>\r\n	<p><strong>Ưu đ&atilde;i độc quyền:</strong></p>\r\n	</li>\r\n	<li>Thu cũ l&ecirc;n đời máy mới,<strong>&nbsp;giá thu cao nh&acirc;́t&nbsp;</strong>thị trường&nbsp;(<a href=\"https://www.xtmobile.vn/thu-doi-may-cu\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n	<li>Tặng g&oacute;i bảo h&agrave;nh to&agrave;n diện (cả nguồn, m&agrave;n h&igrave;nh) trong&nbsp;<strong>6 th&aacute;ng</strong></li>\r\n	<li><strong>Giảm 30%</strong>&nbsp;khi n&acirc;ng cấp bảo h&agrave;nh mở rộng 1 đổi 1, rơi vỡ thấm nước (<strong>bảo h&agrave;nh pin 5 năm</strong>) (<a href=\"https://www.xtmobile.vn/bao-hanh-mo-rong\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n</ul>', 34000000, 3, 252, 15, '1685719366_(600x600)_crop_iphone-12-pro-max-128gb-cu.jpg', 4, 1, '2021-11-08 08:59:07', '2023-06-03 04:47:39'),
-(6, 'Iphone 12', 'iphone-12', 3, 'xxxxxxxxxxxxxxxxxxxxxxxxxxx', 45000000, 34000000, 219, 11, '1685726440_(600x600)_14pro_max_trang_600x600_didongmy.png', 3, 1, '2023-06-02 17:20:40', '2023-06-03 06:09:28'),
-(7, 'Vivo A73', 'vivo-a73', 1, '<p>Trả g&oacute;p 0% thẻ t&iacute;n dụng qua Qu&agrave; tặng Galaxy&nbsp;<a href=\"http://www.thegioididong.com/tin-tuc/galaxy-s23-series-tra-gop-0-qua-the-tin-dung-chuyen-doi-qua-tang-galaxy-1510650\">Xem chi tiết</a></p>\r\n\r\n<p>2</p>\r\n\r\n<p>Nhập m&atilde; MMDIENTU giảm ngay 1% tối đa 100.000đ khi thanh to&aacute;n qua MOMO<a href=\"https://www.dienmayxanh.com/khuyen-mai/giam-gia-1-toi-da-100-000d-khi-thanh-toan-momo-1530103\" target=\"_blank\">(Xem chi tiết tại đ&acirc;y.)</a></p>\r\n\r\n<p>3</p>\r\n\r\n<p>Giảm 100,000đ Cho Đơn H&agrave;ng Từ 10 Triệu Khi Thanh To&aacute;n Qu&eacute;t M&atilde; SmartPay QR Bằng Ứng Dụng Ng&acirc;n H&agrave;ng<a href=\"https://www.dienmayxanh.com/khuyen-mai/giam-100k-khi-thanh-toan-qua-smartpay-1526326\" target=\"_blank\">Xem chi tiết tại đ&acirc;y. )</a></p>\r\n\r\n<p>4</p>\r\n\r\n<p>Nhập m&atilde; VNPAY567 giảm tối đa 200K cho đơn h&agrave;ng từ 05 Triệu thanh to&aacute;n qua VNPAY<a href=\"https://www.dienmayxanh.com/khuyen-mai/nhap-ma-vnpay567-giam-toi-da-200k-qua-vnpay-1527213\" target=\"_blank\">Xem chi tiết tại đ&acirc;y. )</a></p>', 6700000, 6000000, 54, 8, '1685765840_samsung-galaxy-a23-cam-thumb-600x600.jpg', 1, 1, '2023-06-03 04:17:02', '2023-06-03 06:22:23'),
-(8, 'Xiaomi note 13', 'xiaomi-note-13', 6, 'xxx', 12000000, 11000000, 63, 7, '1685766119_10053969-dien-thoai-xiaomi-redmi-a1-2gb-32gb-xanh-duong-1.jpg', 3, 1, '2023-06-03 04:21:59', '2023-06-03 06:09:28'),
-(9, 'demo them sp', 'demo-them-sp', 3, 'xxxxxxxxx', 9000000, 8000000, 55, 0, '1685772268_80b1056794c6b1ccfe44653589bc53a0.jpg_720x720q80.jpg', 0, 1, '2023-06-03 06:04:29', '2023-06-03 06:04:28');
+(1, 'Vivo y15', 'vivo-y15', 1, 'product 1', 2100000, 0, 123, 129, '1685719614_d0ee12653b2965f03ea8db99444f73f2.jpg_720x720q80.jpg', 2, 1, '2021-11-06 06:49:33', '2024-5-10 04:47:27'),
+(2, 'Vivo v25', 'vivo-v25', 1, '<ul>\r\n	<li>xxx</li>\r\n</ul>', 9000000, 250000, 119, 113, '1685719574_vivo-v25-5g-vang-thumb-1-1-600x600.jpg', 4, 1, '2021-11-15 05:24:28', '2024-5-10 05:58:33'),
+(3, 'Xiaomi', 'xiaomi', 6, 'product 3', 3500000, 0, 124, 20, '1685719523_xiaomi-redmi-12c-grey-thumb-600x600.jpg', 0, 1, '2024-5-10 08:29:42', '2024-5-10 06:03:52'),
+(4, 'Iphone 13 pro', 'iphone-13-pro', 3, '<p><strong>Tặng full combo phụ kiện:</strong></p>\r\n\r\n<ul>\r\n	<li>D&aacute;n cường lực full ch&iacute;nh h&atilde;ng</li>\r\n	<li>Ốp lưng chống sốc silicon ch&iacute;nh h&atilde;ng</li>\r\n	<li>Bộ c&aacute;p sạc 20W ch&iacute;nh h&atilde;ng (<a href=\"https://www.xtmobile.vn/bao-hanh-mo-rong\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n</ul>\r\n\r\n<p><strong>Ưu đ&atilde;i độc quyền:</strong></p>\r\n\r\n<ul>\r\n	<li>Thu cũ l&ecirc;n đời máy mới,<strong>&nbsp;giá thu cao nh&acirc;́t&nbsp;</strong>thị trường&nbsp;(<a href=\"https://www.xtmobile.vn/thu-doi-may-cu\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n	<li>Tặng g&oacute;i bảo h&agrave;nh to&agrave;n diện (cả nguồn, m&agrave;n h&igrave;nh) trong&nbsp;<strong>6 th&aacute;ng</strong></li>\r\n	<li><strong>Giảm 30%</strong>&nbsp;khi n&acirc;ng cấp bảo h&agrave;nh mở rộng 1 đổi 1, rơi vỡ thấm nước (<strong>bảo h&agrave;nh pin 5 năm</strong>) (<a href=\"https://www.xtmobile.vn/bao-hanh-mo-rong\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n</ul>', 32000000, 0, 125, 5, '1685719441_(600x600)_14pro_max_trang_600x600_didongmy.png', 0, 2, '2024-5-10 08:38:38', '2024-5-10 06:05:18'),
+(5, 'Iphone 14 pro', 'iphone-14-pro', 3, '<ul>\r\n	<li>\r\n	<p><strong>Tặng full combo phụ kiện:</strong></p>\r\n	</li>\r\n	<li>D&aacute;n cường lực full ch&iacute;nh h&atilde;ng</li>\r\n	<li>Ốp lưng chống sốc silicon ch&iacute;nh h&atilde;ng</li>\r\n	<li>Bộ c&aacute;p sạc 20W ch&iacute;nh h&atilde;ng (<a href=\"https://www.xtmobile.vn/bao-hanh-mo-rong\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n	<li>\r\n	<p><strong>Ưu đ&atilde;i độc quyền:</strong></p>\r\n	</li>\r\n	<li>Thu cũ l&ecirc;n đời máy mới,<strong>&nbsp;giá thu cao nh&acirc;́t&nbsp;</strong>thị trường&nbsp;(<a href=\"https://www.xtmobile.vn/thu-doi-may-cu\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n	<li>Tặng g&oacute;i bảo h&agrave;nh to&agrave;n diện (cả nguồn, m&agrave;n h&igrave;nh) trong&nbsp;<strong>6 th&aacute;ng</strong></li>\r\n	<li><strong>Giảm 30%</strong>&nbsp;khi n&acirc;ng cấp bảo h&agrave;nh mở rộng 1 đổi 1, rơi vỡ thấm nước (<strong>bảo h&agrave;nh pin 5 năm</strong>) (<a href=\"https://www.xtmobile.vn/bao-hanh-mo-rong\" target=\"_blank\">click xem chi tiết</a>)</li>\r\n</ul>', 34000000, 3, 252, 15, '1685719366_(600x600)_crop_iphone-12-pro-max-128gb-cu.jpg', 4, 1, '2024-5-10 08:59:07', '2024-5-10 04:47:39'),
+(6, 'Iphone 12', 'iphone-12', 3, 'xxxxxxxxxxxxxxxxxxxxxxxxxxx', 45000000, 34000000, 219, 11, '1685726440_(600x600)_14pro_max_trang_600x600_didongmy.png', 3, 1, '2024-5-10 17:20:40', '2024-5-10 06:09:28'),
+(7, 'Vivo A73', 'vivo-a73', 1, '<p>Trả g&oacute;p 0% thẻ t&iacute;n dụng qua Qu&agrave; tặng Galaxy&nbsp;<a href=\"http://www.thegioididong.com/tin-tuc/galaxy-s23-series-tra-gop-0-qua-the-tin-dung-chuyen-doi-qua-tang-galaxy-1510650\">Xem chi tiết</a></p>\r\n\r\n<p>2</p>\r\n\r\n<p>Nhập m&atilde; MMDIENTU giảm ngay 1% tối đa 100.000đ khi thanh to&aacute;n qua MOMO<a href=\"https://www.dienmayxanh.com/khuyen-mai/giam-gia-1-toi-da-100-000d-khi-thanh-toan-momo-1530103\" target=\"_blank\">(Xem chi tiết tại đ&acirc;y.)</a></p>\r\n\r\n<p>3</p>\r\n\r\n<p>Giảm 100,000đ Cho Đơn H&agrave;ng Từ 10 Triệu Khi Thanh To&aacute;n Qu&eacute;t M&atilde; SmartPay QR Bằng Ứng Dụng Ng&acirc;n H&agrave;ng<a href=\"https://www.dienmayxanh.com/khuyen-mai/giam-100k-khi-thanh-toan-qua-smartpay-1526326\" target=\"_blank\">Xem chi tiết tại đ&acirc;y. )</a></p>\r\n\r\n<p>4</p>\r\n\r\n<p>Nhập m&atilde; VNPAY567 giảm tối đa 200K cho đơn h&agrave;ng từ 05 Triệu thanh to&aacute;n qua VNPAY<a href=\"https://www.dienmayxanh.com/khuyen-mai/nhap-ma-vnpay567-giam-toi-da-200k-qua-vnpay-1527213\" target=\"_blank\">Xem chi tiết tại đ&acirc;y. )</a></p>', 6700000, 6000000, 54, 8, '1685765840_samsung-galaxy-a23-cam-thumb-600x600.jpg', 1, 1, '2024-5-10 04:17:02', '2024-5-10 06:22:23'),
+(8, 'Xiaomi note 13', 'xiaomi-note-13', 6, 'xxx', 12000000, 11000000, 63, 7, '1685766119_10053969-dien-thoai-xiaomi-redmi-a1-2gb-32gb-xanh-duong-1.jpg', 3, 1, '2024-5-10 04:21:59', '2024-5-10 06:09:28'),
+(9, 'demo them sp', 'demo-them-sp', 3, 'xxxxxxxxx', 9000000, 8000000, 55, 0, '1685772268_80b1056794c6b1ccfe44653589bc53a0.jpg_720x720q80.jpg', 0, 1, '2024-5-10 06:04:29', '2024-5-10 06:04:28');
 
 -- --------------------------------------------------------
 
@@ -1190,8 +1178,8 @@ CREATE TABLE `reviews` (
 INSERT INTO `reviews` (`review_id`, `user_id`, `pro_id`, `review_rating`, `review_desc`, `created_at`, `updated_at`) VALUES
 (1, 2, 2, 5, 'Good!', '2021-11-15 06:48:22', '2021-11-16 06:48:44'),
 (2, 1, 2, 2, 'I have purchased shirts from Minimalism a few times and am never disappointed. The quality is excellent and the shipping is amazing. It seems like it is at your front door the minute you get off your pc. I have received my purchases within two days - amazing.', '2021-11-16 06:48:44', '2021-11-16 06:48:44'),
-(7, 1, 2, 4, 'quá oke lu&ocirc;n', '2023-06-03 04:25:19', '2023-06-03 04:25:19'),
-(8, 1, 8, 5, 'quá oke lu&ocirc;n', '2023-06-03 04:25:39', '2023-06-03 04:25:39');
+(7, 1, 2, 4, 'quá oke lu&ocirc;n', '2024-5-10 04:25:19', '2024-5-10 04:25:19'),
+(8, 1, 8, 5, 'quá oke lu&ocirc;n', '2024-5-10 04:25:39', '2024-5-10 04:25:39');
 
 -- --------------------------------------------------------
 
@@ -1218,10 +1206,10 @@ CREATE TABLE `slider` (
 --
 
 INSERT INTO `slider` (`slider_id`, `slider_name`, `slider_desc`, `slider_content`, `slider_url`, `slider_image`, `slider_sorting`, `slider_status`, `slider_change`, `created_at`, `updated_at`) VALUES
-(1, 'Iphong 14 promax', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'FASHION LIFE', NULL, '1685717600_banner-1.jpg', 3, 1, 1, '2021-11-04 04:29:51', '2023-06-02 14:53:20'),
-(3, 'HUA WIE P30', 'Mượt mà', 'sang trọng', NULL, '1685717492_huong-dan-thiet-ke-banner-dien-thoai-bang-photoshop.jpg', 1, 1, 1, '2021-11-08 09:27:34', '2023-06-02 14:52:17'),
-(4, 'Tiết kiệm tới 60%', 'There\'s nothing like trend', 'Best Deals', NULL, '1685717565_banner-trang-tin-sale.jpg', 2, 1, 1, '2021-11-08 09:31:03', '2023-06-02 14:52:45'),
-(6, 'demo them bannerxxx', 'demo them banner', 'demo them banner', 'x', '1685772463_blog-img2.jpg', 5, 1, 1, '2023-06-03 06:07:43', '2023-06-03 06:07:55');
+(1, 'Iphong 14 promax', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'FASHION LIFE', NULL, '1685717600_banner-1.jpg', 3, 1, 1, '2021-11-04 04:29:51', '2024-5-10 14:53:20'),
+(3, 'HUA WIE P30', 'Mượt mà', 'sang trọng', NULL, '1685717492_huong-dan-thiet-ke-banner-dien-thoai-bang-photoshop.jpg', 1, 1, 1, '2024-5-10 09:27:34', '2024-5-10 14:52:17'),
+(4, 'Tiết kiệm tới 60%', 'There\'s nothing like trend', 'Best Deals', NULL, '1685717565_banner-trang-tin-sale.jpg', 2, 1, 1, '2024-5-10 09:31:03', '2024-5-10 14:52:45'),
+(6, 'demo them bannerxxx', 'demo them banner', 'demo them banner', 'x', '1685772463_blog-img2.jpg', 5, 1, 1, '2024-5-10 06:07:43', '2024-5-10 06:07:55');
 
 -- --------------------------------------------------------
 
@@ -1266,9 +1254,9 @@ INSERT INTO `statistical` (`id_statistic`, `order_date`, `sales`, `profit`, `qua
 (21, '2021-10-21', '260000000', '259996000', 6, 6),
 (22, '2021-10-23', '200000000', '199998000', 4, 2),
 (23, '2021-10-28', '18000000', '17999000', 2, 1),
-(24, '2021-11-12', '300000', '299000', 1, 1),
-(25, '2021-11-17', '6600000', '6599000', 14, 2),
-(26, '2023-06-03', '126800000', '126793000', 8, 8);
+(24, '2024-5-10', '300000', '299000', 1, 1),
+(25, '2024-5-10', '6600000', '6599000', 14, 2),
+(26, '2024-5-10', '126800000', '126793000', 8, 8);
 
 -- --------------------------------------------------------
 
@@ -1293,15 +1281,15 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `email`, `password`, `level`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'admin', 'admin', 'admin@gmail.com', '$2y$10$io74k3TRC6rkwU3..NKJeOg.xxsWBNZP7OiI1vbgTxCl8qSwo1p2G', 2, NULL, '2021-11-03 04:26:02', '2023-06-03 06:24:51'),
+(1, 'admin', 'admin', 'admin@gmail.com', '$2y$10$io74k3TRC6rkwU3..NKJeOg.xxsWBNZP7OiI1vbgTxCl8qSwo1p2G', 2, NULL, '2021-11-03 04:26:02', '2024-5-10 06:24:51'),
 (2, 'test', 'test', 'test@gmail.com', '$2y$10$yGv9zg//XHmUuEBp6SDtaOFF6vCH3N42vIYePbkTTR6Wk7RpiAuZS', 1, NULL, '2021-11-04 04:31:50', '2021-11-04 04:31:50'),
-(4, 'nnnn', 'nnnn', 'nnnn@gmail.com', '$2y$10$oMxhuPdC/JD0diFB9.sQKe3YptI.nD0KYiLozfE8S4QL4nPBNYiTW', 1, '3GMXpw98HpgWZK4kpzaFrXDoweMBimvVxB9BCGYzs3FCTHTgAdwFFu0er1uz', '2023-05-27 07:14:34', '2023-05-27 07:14:34'),
-(5, 'xxxx1', 'xxxx1', 'xxxx1@gmail.com', '$2y$10$TMxjAo0nv1xGebu9cbNB2.Y2cb7fnCzNrxx96aM8v9q9jsew3QMIW', 1, 'kFwLBFuK05oIwVbU1DF0MftKqCZyUjWtH38YknT2tg5nt6ah7US1Uq2AYILN', '2023-05-31 12:46:11', '2023-06-03 06:03:37'),
-(6, 'xxxxxza', 'xxxxxza', 'xxxxzs@gmail.com', '$2y$10$ryiV/D4IAlJHWmNz2LND1Oa/BRW7GJP14obDVRyhs4Ibu3diYzpty', 1, 'cVibJlmUvZDxax7CLC1DWWRaC5rO7uUD0w5iouv1pcCqiS7Gv9KAsEdIfZ4E', '2023-06-02 15:40:36', '2023-06-02 17:19:15'),
-(8, 'xxxxxv', 'xxxxxv', 'xxxxxv@gmail.com', '$2y$10$2i52607fQwLsLVlG45zXfe/EaLI6cXgMxR06ckEUeUyJ1Bf0qv/mS', 1, NULL, '2023-06-02 17:19:41', '2023-06-02 17:19:41'),
-(9, 'codedoan', 'codedoan', 'codedoan@gmail.com', '$2y$10$i32gqEIla06xeJFo0UOhxOKd1v2Fk8x7.66lbSMgSrrthf0Zm0fz2', 1, 'ZyuAw2eNGmnFClYeP2T8SxJMCz0OXOoqWSq8cSvm3hzIDaW7DgLsg7iIyUHD', '2023-06-03 04:48:43', '2023-06-03 04:48:43'),
-(10, 'codedoan1', 'codedoan1', 'codedoan1@gmail.com', '$2y$10$l7S3AjDlnabD00XTGRyDAuSuUqRh2AkkhMG7UXFg5NDuQeZLa2pl2', 1, 'IrJyLiZOykugciPJuwIjEuejh4Q7f8I9uB5mXhIBkcyasBi8YNUmPCEzEv1v', '2023-06-03 05:59:18', '2023-06-03 05:59:18'),
-(11, 'demouser', 'demouser', 'demouser@gmail.com', '$2y$10$OwwCFQ.7JDP/wL.pnMMwzukOlXsTenSrcLWuhIlDsQfTR9Y/OkiU.', 1, NULL, '2023-06-03 06:03:17', '2023-06-03 06:03:17');
+(4, 'nnnn', 'nnnn', 'nnnn@gmail.com', '$2y$10$oMxhuPdC/JD0diFB9.sQKe3YptI.nD0KYiLozfE8S4QL4nPBNYiTW', 1, '3GMXpw98HpgWZK4kpzaFrXDoweMBimvVxB9BCGYzs3FCTHTgAdwFFu0er1uz', '2024-5-10 07:14:34', '2024-5-10 07:14:34'),
+(5, 'xxxx1', 'xxxx1', 'xxxx1@gmail.com', '$2y$10$TMxjAo0nv1xGebu9cbNB2.Y2cb7fnCzNrxx96aM8v9q9jsew3QMIW', 1, 'kFwLBFuK05oIwVbU1DF0MftKqCZyUjWtH38YknT2tg5nt6ah7US1Uq2AYILN', '2023-05-31 12:46:11', '2024-5-10 06:03:37'),
+(6, 'xxxxxza', 'xxxxxza', 'xxxxzs@gmail.com', '$2y$10$ryiV/D4IAlJHWmNz2LND1Oa/BRW7GJP14obDVRyhs4Ibu3diYzpty', 1, 'cVibJlmUvZDxax7CLC1DWWRaC5rO7uUD0w5iouv1pcCqiS7Gv9KAsEdIfZ4E', '2024-5-10 15:40:36', '2024-5-10 17:19:15'),
+(8, 'xxxxxv', 'xxxxxv', 'xxxxxv@gmail.com', '$2y$10$2i52607fQwLsLVlG45zXfe/EaLI6cXgMxR06ckEUeUyJ1Bf0qv/mS', 1, NULL, '2024-5-10 17:19:41', '2024-5-10 17:19:41'),
+(9, 'codedoan', 'codedoan', 'codedoan@gmail.com', '$2y$10$i32gqEIla06xeJFo0UOhxOKd1v2Fk8x7.66lbSMgSrrthf0Zm0fz2', 1, 'ZyuAw2eNGmnFClYeP2T8SxJMCz0OXOoqWSq8cSvm3hzIDaW7DgLsg7iIyUHD', '2024-5-10 04:48:43', '2024-5-10 04:48:43'),
+(10, 'codedoan1', 'codedoan1', 'codedoan1@gmail.com', '$2y$10$l7S3AjDlnabD00XTGRyDAuSuUqRh2AkkhMG7UXFg5NDuQeZLa2pl2', 1, 'IrJyLiZOykugciPJuwIjEuejh4Q7f8I9uB5mXhIBkcyasBi8YNUmPCEzEv1v', '2024-5-10 05:59:18', '2024-5-10 05:59:18'),
+(11, 'demouser', 'demouser', 'demouser@gmail.com', '$2y$10$OwwCFQ.7JDP/wL.pnMMwzukOlXsTenSrcLWuhIlDsQfTR9Y/OkiU.', 1, NULL, '2024-5-10 06:03:17', '2024-5-10 06:03:17');
 
 -- --------------------------------------------------------
 
@@ -12518,11 +12506,11 @@ INSERT INTO `wishlist` (`wishlist_id`, `pro_id`, `user_id`, `created_at`, `updat
 (9, 2, 2, '2021-11-13 10:22:17', '2021-11-13 10:22:17'),
 (10, 5, 2, '2021-11-13 10:22:20', '2021-11-13 10:22:20'),
 (11, 5, 1, '2021-11-15 07:33:59', '2021-11-15 07:33:59'),
-(16, 2, 6, '2023-06-02 15:56:58', '2023-06-02 15:56:58'),
-(19, 7, 9, '2023-06-03 04:48:51', '2023-06-03 04:48:51'),
-(20, 6, 9, '2023-06-03 04:49:00', '2023-06-03 04:49:00'),
-(21, 8, 10, '2023-06-03 05:59:31', '2023-06-03 05:59:31'),
-(22, 5, 10, '2023-06-03 05:59:34', '2023-06-03 05:59:34');
+(16, 2, 6, '2024-5-10 15:56:58', '2024-5-10 15:56:58'),
+(19, 7, 9, '2024-5-10 04:48:51', '2024-5-10 04:48:51'),
+(20, 6, 9, '2024-5-10 04:49:00', '2024-5-10 04:49:00'),
+(21, 8, 10, '2024-5-10 05:59:31', '2024-5-10 05:59:31'),
+(22, 5, 10, '2024-5-10 05:59:34', '2024-5-10 05:59:34');
 
 --
 -- Indexes for dumped tables
